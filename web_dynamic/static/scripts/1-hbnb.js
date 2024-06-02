@@ -1,4 +1,5 @@
 'use strict';
+// Script that gets executed whne DOM is loaded
 
 $(document).ready(function () {
   const amenities = {};
