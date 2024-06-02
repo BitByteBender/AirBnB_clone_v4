@@ -1,9 +1,12 @@
 #!/usr/bin/python3
 """ console """
 
+# Importing necessary libraries and modules
 import cmd
 from datetime import datetime
 import models
+
+# Importing specific classes from the models module
 from models.amenity import Amenity
 from models.base_model import BaseModel
 from models.city import City
@@ -13,6 +16,7 @@ from models.state import State
 from models.user import User
 import shlex  # for splitting the line along spaces except in double quotes
 
+# Creating a dictionary that maps class names to their corresponding classes
 classes = {"Amenity": Amenity, "BaseModel": BaseModel, "City": City,
            "Place": Place, "Review": Review, "State": State, "User": User}
 
